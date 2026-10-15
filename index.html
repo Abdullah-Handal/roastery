@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بُنّ الوادي | قهوة مختصة محمّصة هذا الأسبوع</title>
+<meta name="description" content="بُنّ الوادي محمصة صغيرة تحمّص أربع قهوات مختصة كل أسبوع وتوصلها داخل المدينة. اختر درجة التحميص التي تحبها واطلب عبر واتساب.">
+<meta name="theme-color" content="#1B110C">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:title" content="بُنّ الوادي | قهوة محمّصة هذا الأسبوع">
+<meta property="og:description" content="أربع قهوات مختصة، تحميص بكميات صغيرة، وتوصيل داخل المدينة. اطلب عبر واتساب.">
+<meta property="og:image" content="https://abdullah-handal.github.io/roastery/thumb.png">
+<meta property="og:url" content="https://abdullah-handal.github.io/roastery/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="bean-depth" cx="38%" cy="32%" r="75%">
+      <stop offset="0" stop-color="#fff" stop-opacity=".16"/>
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".38"/>
+    </radialGradient>
+    <symbol id="bean" viewBox="0 0 400 400">
+      <g transform="rotate(24 200 200)">
+        <ellipse cx="200" cy="200" rx="128" ry="172" fill="var(--bean)"/>
+        <ellipse cx="200" cy="200" rx="128" ry="172" fill="url(#bean-depth)"/>
+        <path d="M200 34C150 120 252 170 200 224S250 310 200 366" fill="none" stroke="var(--crease)" stroke-width="var(--crease-w,16)" stroke-linecap="round"/>
+        <ellipse cx="146" cy="120" rx="16" ry="44" transform="rotate(18 146 120)" fill="#fff" opacity="var(--shine,.2)"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#coffees">انتقل إلى القهوات</a>
+
+<header class="top">
+  <a class="brand" href="#" aria-label="بُنّ الوادي، الصفحة الرئيسية">
+    <svg viewBox="0 0 64 64" width="34" height="34" aria-hidden="true"><use href="#bean" style="--bean:#B9793F;--crease:#1B110C;--crease-w:18"/></svg>
+    <span>بُنّ الوادي</span>
+  </a>
+  <nav aria-label="أقسام الصفحة">
+    <a href="#roast">التحميص</a>
+    <a href="#coffees">القهوات</a>
+    <a href="#order">الطلب</a>
+    <a href="#faq">الأسئلة</a>
+  </nav>
+  <a class="btn btn-sm wa" href="https://wa.me/966500000000">اطلب عبر واتساب</a>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-text">
+    <h1 id="h1">قهوة حُمّصت هذا الأسبوع</h1>
+    <p class="lead">نحمّص أربع قهوات مختصة بكميات صغيرة، ونوصلها إلى بابك داخل المدينة. اختر ما يناسب ذوقك واطلب عبر واتساب.</p>
+    <div class="actions">
+      <a class="btn wa" href="https://wa.me/966500000000">اطلب عبر واتساب</a>
+      <a class="textlink" href="#roast">جرّب درجات التحميص</a>
+    </div>
+    <p class="fine">تحميص كل ثلاثاء. التوصيل خلال يومين. أرخص كيس بـ 52 ر.س.</p>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <svg class="b1" viewBox="0 0 400 400"><use href="#bean" style="--bean:#8E5830;--crease:#24150d;--shine:.22"/></svg>
+    <svg class="b2" viewBox="0 0 400 400"><use href="#bean" style="--bean:#C9A05F;--crease:#5a3a1c;--shine:.3"/></svg>
+    <svg class="b3" viewBox="0 0 400 400"><use href="#bean" style="--bean:#3a2217;--crease:#0e0805;--shine:.4"/></svg>
+    <p class="stamp">دفعة<br>الأسبوع<br><b>رقم 41</b></p>
+  </div>
+</section>
+
+<section class="roast" id="roast" aria-labelledby="h-roast">
+  <div class="roast-in">
+    <div class="stage" id="stage">
+      <svg viewBox="0 0 400 400" role="img" aria-label="حبة بن" id="beanSvg"><use href="#bean"/></svg>
+    </div>
+    <div class="ctrl">
+      <h2 id="h-roast">كم تحب تحميصها؟</h2>
+      <p class="lead">حرّك المؤشر وشاهد الحبة تتغير. ثم نقترح عليك القهوة الأقرب لذوقك.</p>
+
+      <label class="sr" for="level">درجة التحميص</label>
+      <input type="range" id="level" min="0" max="100" value="30" step="1">
+      <ol class="ticks" aria-hidden="true"><li>خفيف</li><li>متوسط</li><li>متوسط داكن</li><li>داكن</li></ol>
+
+      <p class="readout" aria-live="polite"><span id="lvlName">متوسط</span> يعني <span id="temp">206</span> °م لمدة <span id="mins">10</span> دقائق تقريبًا.</p>
+
+      <div class="taste" aria-hidden="true">
+        <span id="tAcid">حموضة</span><span id="tSweet">حلاوة</span><span id="tBitter">مرارة</span>
+      </div>
+
+      <div class="rec">
+        <p>نقترح عليك <strong id="recName">كولومبيا هويلا</strong></p>
+        <a class="btn wa gold" id="recBtn" href="https://wa.me/966500000000">اطلبها الآن</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="coffees" aria-labelledby="h-cof">
+  <h2 id="h-cof">قهوات هذا الأسبوع</h2>
+  <p class="lead">كل كيس 250 غ، محمّص ومعبّأ في الأسبوع نفسه. نطحنها لك على الطريقة التي تحضّر بها.</p>
+  <ul class="cups">
+    <li class="cup" data-level="0" data-name="إثيوبيا يرغاتشيف">
+      <div class="who"><h3>إثيوبيا يرغاتشيف</h3><p class="sub">مغسولة، من ارتفاع 2000 م</p></div>
+      <p class="notes">ياسمين وخوخ وشاي بالليمون. صافية وخفيفة وحموضتها منعشة.</p>
+      <p class="rl"><i style="--c:#C9A05F"></i>تحميص خفيف</p>
+      <div class="buy"><p class="price"><b>68</b> ر.س <small>لكل 250 غ</small></p><a class="btn btn-line wa" href="https://wa.me/966500000000" aria-label="اطلب إثيوبيا يرغاتشيف">اطلب</a></div>
+    </li>
+    <li class="cup" data-level="1" data-name="كولومبيا هويلا">
+      <div class="who"><h3>كولومبيا هويلا</h3><p class="sub">معالجة طبيعية، من ارتفاع 1700 م</p></div>
+      <p class="notes">كراميل وتفاح أحمر وكاكاو. متوازنة وتناسب كل يوم.</p>
+      <p class="rl"><i style="--c:#8E5830"></i>تحميص متوسط</p>
+      <div class="buy"><p class="price"><b>58</b> ر.س <small>لكل 250 غ</small></p><a class="btn btn-line wa" href="https://wa.me/966500000000" aria-label="اطلب كولومبيا هويلا">اطلب</a></div>
+    </li>
+    <li class="cup" data-level="2" data-name="اليمن حرَز">
+      <div class="who"><h3>اليمن حرَز</h3><p class="sub">مجففة على الأسطح، من جبال حراز</p></div>
+      <p class="notes">تمر وتوابل وشوكولاتة داكنة وفاكهة مجففة. كثيفة الطعم وتبقى في الفم.</p>
+      <p class="rl"><i style="--c:#54321e"></i>متوسط داكن</p>
+      <div class="buy"><p class="price"><b>92</b> ر.س <small>لكل 250 غ</small></p><a class="btn btn-line wa" href="https://wa.me/966500000000" aria-label="اطلب اليمن حرَز">اطلب</a></div>
+    </li>
+    <li class="cup" data-level="3" data-name="البرازيل سانتوس">
+      <div class="who"><h3>البرازيل سانتوس</h3><p class="sub">طبيعية، من مزارع ميناس جيرايس</p></div>
+      <p class="notes">لوز محمص وشوكولاتة بالحليب وجوز. ناعمة ومناسبة للحليب والإسبريسو.</p>
+      <p class="rl"><i style="--c:#261710"></i>تحميص داكن</p>
+      <div class="buy"><p class="price"><b>52</b> ر.س <small>لكل 250 غ</small></p><a class="btn btn-line wa" href="https://wa.me/966500000000" aria-label="اطلب البرازيل سانتوس">اطلب</a></div>
+    </li>
+  </ul>
+</section>
+
+<section class="sec how" id="order" aria-labelledby="h-order">
+  <h2 id="h-order">أربع خطوات وتصلك القهوة</h2>
+  <ol class="steps">
+    <li><span class="n" aria-hidden="true">1</span><h3>اختر قهوتك</h3><p>من القائمة أو من اقتراح التحميص أعلاه.</p></li>
+    <li><span class="n" aria-hidden="true">2</span><h3>أرسل رسالة واتساب</h3><p>اكتب الكمية وطريقة التحضير لنطحنها لك مناسبة.</p></li>
+    <li><span class="n" aria-hidden="true">3</span><h3>نؤكد الطلب</h3><p>نرد عليك بالسعر النهائي ووقت التوصيل. الدفع عند الاستلام أو بتحويل.</p></li>
+    <li><span class="n" aria-hidden="true">4</span><h3>نحمّص ونوصّل</h3><p>تُحمَّص بعد طلبك وتصلك خلال يومين داخل المدينة.</p></li>
+  </ol>
+</section>
+
+<section class="story" aria-labelledby="h-story">
+  <svg class="terraces" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 80C200 40 340 110 560 70S980 30 1200 80V160H0Z" fill="#B7C59C"/>
+    <path d="M0 108C220 70 380 138 600 100S1000 66 1200 108V160H0Z" fill="#8FA878"/>
+    <path d="M0 134C240 106 420 160 640 128S1020 104 1200 134V160H0Z" fill="#5E7A55"/>
+  </svg>
+  <div class="story-in">
+    <h2 id="h-story">محمصة صغيرة على أطراف الوادي</h2>
+    <p>بدأنا عام 2019 بمحمصة تتسع لكيلوين، في مرآب يملكه جدّ أحمد. كنا نريد قهوة تشبه ما نشربه عندما نسافر، لكن طازجة وقريبة.</p>
+    <p>اليوم نشتري الحبوب الخضراء مباشرة من أربع مزارع نعرف أسماء أصحابها، ونحمّص كل دفعة بيدنا، وندوّن حرارتها ومدتها على الكيس. لا نحمّص أكثر مما نبيعه في الأسبوع.</p>
+    <p class="sign">أحمد وسلمى، محمّصا بُنّ الوادي</p>
+  </div>
+</section>
+
+<section class="sec faq" id="faq" aria-labelledby="h-faq">
+  <h2 id="h-faq">أسئلة تتكرر</h2>
+  <div class="qa">
+    <details><summary>كم يستغرق التوصيل؟</summary><p>داخل المدينة خلال يومين من تأكيد الطلب. التوصيل مجاني للطلبات فوق 150 ر.س، وتحته 15 ر.س.</p></details>
+    <details><summary>هل القهوة طازجة فعلًا؟</summary><p>نحمّص كل ثلاثاء فقط للطلبات المؤكدة. تاريخ التحميص مكتوب على الكيس، وأفضل وقت لشربها بين اليوم الثالث واليوم الثلاثين بعد التحميص.</p></details>
+    <details><summary>هل تطحنون القهوة؟</summary><p>نعم، مجانًا. أخبرنا بطريقتك: إسبريسو، موكا، في60، فرنسية، أو تركية. وإن أردت الحبوب كاملة فهي أطول عمرًا.</p></details>
+    <details><summary>كيف أحفظها بعد الفتح؟</summary><p>في علبة محكمة بعيدًا عن الضوء والحرارة. لا تضعها في الثلاجة.</p></details>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div>
+      <h2>جاهز تطلب؟</h2>
+      <p class="lead">راسلنا واذكر القهوة والكمية، وسنرد عليك خلال ساعات العمل.</p>
+      <a class="btn btn-big wa gold" href="https://wa.me/966500000000">اطلب عبر واتساب</a>
+    </div>
+    <dl class="hours">
+      <dt>السبت إلى الخميس</dt><dd>8 صباحًا حتى 10 مساءً</dd>
+      <dt>الجمعة</dt><dd>4 عصرًا حتى 10 مساءً</dd>
+      <dt>المحمصة</dt><dd>حي الوادي، الشارع الصناعي</dd>
+    </dl>
+  </div>
+  <p class="legal">بُنّ الوادي علامة تخيلية، وهذه الصفحة نموذج تصميم من عمل عبدالله.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
