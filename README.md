@@ -25,7 +25,7 @@ A fully Arabic (RTL) landing page that helps visitors pick a coffee and order it
 
 <img src="screenshots/mobile.png" alt="Mobile view" width="320">
 
-Designed for phones first, down to 360 px wide, with large tap targets and a sticky WhatsApp order button.
+Designed for phones first, down to 360 px wide, with large tap targets and WhatsApp ordering one tap away.
 
 ## Built with
 
